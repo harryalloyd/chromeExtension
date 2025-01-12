@@ -6,7 +6,12 @@ port.postMessage({ type: "getTrackerCount" });
 
 // Listen for responses from the background script
 port.onMessage.addListener((response) => {
-  console.log("Received response from background:", response); // Log the response
   const count = response ? response.count : 0;
   document.getElementById("tracker-count").textContent = count;
+});
+
+// Reset button functionality
+document.getElementById("reset-btn").addEventListener("click", () => {
+  port.postMessage({ type: "resetTrackerCount" });
+  document.getElementById("tracker-count").textContent = 0;
 });
