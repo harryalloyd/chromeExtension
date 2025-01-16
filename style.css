@@ -1,16 +1,47 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  h1 {
-    margin-bottom: 10px;
-  }
-  
-  #tracker-count {
-    font-size: 24px;
-    font-weight: bold;
-    color: #4CAF50;
-  }
-  
+  font-family: Arial, sans-serif;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  background: #fafafa;
+  border-radius: 4px;
+}
+
+h1 {
+  margin-bottom: 0.5em;
+  font-size: 1.2rem;
+}
+
+h2 {
+  margin: 1em 0 0.5em;
+  font-size: 1rem;
+}
+
+#total-trackers {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #d32f2f;
+  margin-bottom: 1em;
+}
+
+#reset-btn {
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#reset-btn:hover {
+  background-color: #1976d2;
+}
+
+#domain-list {
+  text-align: left;
+  margin-top: 0.5em;
+  padding-left: 16px; /* left indent for bullets */
+}
+#domain-list li {
+  margin-bottom: 0.3em;
+}

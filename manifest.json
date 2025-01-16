@@ -1,13 +1,13 @@
 {
-    "manifest_version": 3,
-    "name": "Data Tracker Visualizer",
-    "version": "1.0",
-    "description": "Visualize and track third-party trackers in real-time.",
-    "permissions": ["webRequest", "activeTab", "storage", "tabs"],
-    "host_permissions": ["<all_urls>"],
-    "background": {
-      "service_worker": "background.js"
-    },
+  "manifest_version": 3,
+  "name": "Data Tracker Visualizer",
+  "version": "1.0",
+  "description": "Visualize and track third-party trackers in real-time.",
+  "permissions": ["webRequest", "activeTab", "storage", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
     "action": {
       "default_popup": "popup.html",
       "default_icon": {

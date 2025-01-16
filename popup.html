@@ -2,16 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Data Tracker Visualizer</title>
   <link rel="stylesheet" href="styles.css" />
+  <!-- Include Chart.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-  <h1>Trackers Found</h1>
-  <div id="tracker-count">0</div>
-  <button id="reset-btn">Reset Count</button>
-  <h2>Tracker List</h2>
-  <ul id="tracker-list"></ul>
+  <h1>Data Tracker Visualizer</h1>
+
+  <div id="total-trackers">Total Trackers: 0</div>
+  <button id="reset-btn">Reset Data</button>
+
+  <h2>Top 5 Domains (Bar Chart)</h2>
+  <canvas id="domain-bar-chart" width="300" height="200"></canvas>
+
+  <h2>All Domains List</h2>
+  <ul id="domain-list"></ul>
+
   <script src="popup.js"></script>
 </body>
 </html>
